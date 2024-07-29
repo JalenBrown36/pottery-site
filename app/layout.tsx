@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={urbanist.className}>{children}</body>
+      <body className={`${urbanist.className} bg-main-pattern`}>{children}</body>
     </html>
   );
 }
