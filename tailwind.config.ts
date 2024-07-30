@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "main-pattern": "url(/creame-texture.png)",
+        "tip-n-technique": "url(/tip-n-technique.png)",
+        "parties": "url(/parties.png)",
+        "faqs": "url(/faqs.png)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

@@ -1,8 +1,9 @@
 import { grandHotel } from "./ui/Fonts";
+import InfoCard from "./ui/pages/InfoCard";
 
 export default function Home() {
   return (
-    <div className="mx-16 text-center">
+    <div className="mx-8 text-center md:mx-16">
       <h1>Home Page</h1>
       <section className="grid grid-flow-row gap-8 py-8">
         <strong>
@@ -11,8 +12,8 @@ export default function Home() {
           more details about our pricing, reservations, pottery pickup, job
           opportunities & scheduling a party or event
         </strong>
-        <div>
-          <ul className="flex gap-4 justify-center items-center">
+        <div className="flex justify-center">
+          <ul className="w-max flex flex-col gap-4 justify-center items-center md:flex-row">
             <li>
               <strong>Email: </strong>
               <a href="">ThePotteryCove@gmail.com</a>
@@ -28,24 +29,24 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section>
+      <section className="py-4">
         <h2 className={`${grandHotel.className}`}>How it Works</h2>
-        <div className="grid grid-cols-3 gap-16 [&_p]:text-base [&_div]:text-sm [&_div]:py-3 [&_div]:px-6">
-          <div className="relative grid grid-rows-2 gap-10 justify-center align-top">
-            <img className="mx-auto" src="coffee-1.png" alt="coffee-1.png" />
-            <div className="absolute top-1/4 left-0 right-0 w-max mx-auto text-white bg-orange-900 rounded"><strong>CHOOSE IT</strong></div>
-            <p>This might be the hardest part! Our shelves are filled with fun, functional, seasonal & holiday choices!</p>
-          </div>
-          <div className="relative grid grid-rows-2 gap-10 justify-center align-top">
-            <img className="mx-auto" src="coffee-2.png" alt="coffee-2.png" />
-            <div className="absolute top-1/4 left-0 right-0 w-max mx-auto text-white bg-orange-900 rounded"><strong>PAINT IT</strong></div>
-            <p>The high heat from the kiln (over 1800 degrees!) transforms the ceramic glaze to a shiny & bold masterpiece!</p>
-          </div>
-          <div className="relative grid grid-rows-2 gap-10 justify-center align-top">
-            <img className="mx-auto" src="coffee-3.png" alt="coffee-3.png" />
-            <div className="absolute top-1/4 left-0 right-0 w-max mx-auto text-white bg-orange-900 rounded"><strong>PICK IT UP</strong></div>
-            <p>The high heat from the kiln (over 1800 degrees!) transforms the ceramic glaze to a shiny & bold masterpiece!</p>
-          </div>
+        <div className="flex md:grid flex-col md:grid-cols-3 gap-8 md:gap-16">
+          <InfoCard
+            title="CHOOSE IT"
+            text="This might be the hardest part! Our shelves are filled with fun, functional, seasonal & holiday choices!"
+            image="/coffee-1.png"
+          />
+          <InfoCard
+            title="PAINT IT"
+            text="The high heat from the kiln (over 1800 degrees!) transforms the ceramic glaze to a shiny & bold masterpiece!"
+            image="/coffee-2.png"
+          />
+          <InfoCard
+            title="PICK IT UP"
+            text="The high heat from the kiln (over 1800 degrees!) transforms the ceramic glaze to a shiny & bold masterpiece!"
+            image="/coffee-3.png"
+          />
         </div>
       </section>
       <section>

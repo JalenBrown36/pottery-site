@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { urbanist } from "./ui/Fonts";
 import "@/app/ui/global.css";
+import Header from "./ui/pages/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${urbanist.className} bg-main-pattern`}>{children}</body>
+      <body className={`${urbanist.className} antialiased bg-main-pattern bg-fixed`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
