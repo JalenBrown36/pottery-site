@@ -7,8 +7,8 @@ interface NavLinkProps {
 
 export default function NavLink({url, text}: NavLinkProps) {
   return (
-    <li className="w-full border-2 border-white">
-      <Link href={url} className="text-white font-bold">{text}</Link>
+    <li className="w-full flex justify-center items-center border-2 border-white">
+      <Link href={url} className="w-full inline-block text-center text-white font-bold">{text}</Link>
     </li>
   );
 }

@@ -1,0 +1,15 @@
+.homeImage {
+
+}
+.galleryImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('/tip-n-technique.png');
+    background-position: 0 15%;
+}
+.partiesImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('/parties.png');
+    background-position: 0 40%;
+}
+.infoImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('/faqs.png');
+    background-position: 0 40%;
+}
