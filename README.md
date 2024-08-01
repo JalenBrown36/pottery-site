@@ -12,4 +12,4 @@ This project is inspired by local online shops 🏪 with a primary focus on arts
 
 Current Progess
 
-![localhost_3000_](https://github.com/user-attachments/assets/23afe884-fb8f-4241-a06c-843261a992a0)
+![localhost_3000_ (2)](https://github.com/user-attachments/assets/c0620a1b-e476-42e6-b56b-eeb334f20c99)
