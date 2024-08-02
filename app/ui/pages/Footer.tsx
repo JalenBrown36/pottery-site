@@ -4,7 +4,7 @@ import clsx from "clsx";
 export default function Footer() {
     return (
         <div className="w-full h-20 flex justify-center items-center gap-12 bg-zinc-900">
-            <ul className="flex justify-between gap-4 [&_a]:w-max [&_a]:px-12 [&_a]:py-2">
+            <ul className="flex justify-between gap-4 [&_a]:w-max [&_a]:px-2 lg:[&_a]:px-6">
                 <NavLink url="/gallery" text="TIPS & TECHNIQUES"/>
                 <NavLink url="/parties" text="PARTIES" />
                 <NavLink url="/information" text="FAQs" />

@@ -26,7 +26,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`${pathImage} py-8 bg-cover bg-no-repeat`}>
+    <header className={`${pathImage} w-full py-8 bg-cover bg-no-repeat`}>
       <div className="w-3/4 mx-auto flex flex-col gap-4 justify-center items-center">
           <div className="w-2/3">
             <Image

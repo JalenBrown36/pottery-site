@@ -14,8 +14,8 @@ export default function NavLink({ url, text, icon, styles }: NavLinkProps) {
     >
       <Link href={url} className="w-full inline-block text-center font-bold">
         {icon ? (
-          <div className="w-10 h-10 flex justify-center items-center rounded-xl">
-            <img src={icon} alt={text} className="w-full h-full " />
+          <div className="md:w-6 lg:w-8 md:h-6 lg:h-8 flex justify-center items-center rounded-xl">
+            <img src={icon} alt={text} className="w-full h-full" />
           </div>
         ) : (
           text
