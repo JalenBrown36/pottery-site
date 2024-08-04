@@ -1,20 +1,24 @@
+'use client';
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 interface NavLinkProps {
   url: string;
   text: string;
   icon?: string | null;
-  styles?: string | null;
 }
 
-export default function NavLink({ url, text, icon, styles }: NavLinkProps) {
+export default function NavLink({ url, text, icon}: NavLinkProps) {
   return (
-    <li
-      className={`w-full flex justify-center text-white items-center ${styles} border-2 border-white`}
-    >
-      <Link href={url} className="w-full inline-block text-center font-bold">
+    <li className="w-full h-4 text-xs flex justify-center text-white items-center border-1 border-white">
+      <Link href={url} className={clsx(
+        "w-full inline-block text-center font-bold text-3xs",
+        {"bg-white text-[#39160B]": usePathname() === url}
+      )}>
         {icon ? (
-          <div className="md:w-6 lg:w-8 md:h-6 lg:h-8 flex justify-center items-center rounded-xl">
+          <div className="w-4 h-4 flex rounded-xl">
             <img src={icon} alt={text} className="w-full h-full" />
           </div>
         ) : (
