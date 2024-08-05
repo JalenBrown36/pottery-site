@@ -6,7 +6,6 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const scale = 2.5;
   const pathname = usePathname();
   const pathImage = clsx({
     "bg-mainPage bg-[center_top_45%]": pathname === "/",
@@ -16,13 +15,13 @@ export default function Header() {
   });
 
   return (
-    <header className={`${pathImage} w-full py-4 bg-cover bg-no-repeat`}>
+    <header className={`${pathImage} w-full py-8 bg-cover bg-no-repeat`}>
       <div className="w-3/4 mx-auto flex flex-col gap-4 justify-center items-center">
           <div className="w-2/3">
             <Image
               src="/pottery-logo.png"
-              width={711/scale}
-              height={241/scale}
+              width={711}
+              height={241}
               className="mx-auto"
               alt="Pottery Logo"
             />

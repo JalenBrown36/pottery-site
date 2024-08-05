@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="w-full mx-auto text-center text-2xs">
+    <div className="w-full mx-auto text-center">
       <section className="w-2/3 mx-auto grid grid-flow-row gap-8 py-4">
         <strong className="w-full">
           Welcome to The Pottery Cove, a cozy, creative paint-your-own pottery
@@ -15,25 +15,25 @@ export default function Home() {
           opportunities & scheduling a party or event
         </strong>
         <div className="flex justify-center">
-          <ul className="w-full flex flex-row gap-4 justify-between items-center [&_li]:text-2xs [&_li]:w-max">
+          <ul className="w-full flex flex-row gap-16 justify-center items-center [&_li]:w-max [&_a]:underline">
             <li>
               <strong>Email: </strong>
-              <a href="">ThePotteryCove@gmail.com</a>
+              <Link href="">ThePotteryCove@gmail.com</Link>
             </li>
             <li>
               <strong>Studio: </strong>
-              <a href="">443-830-2683</a>
+              <Link href="">443-830-2683</Link>
             </li>
             <li>
               <strong>Mobile: </strong>
-              <a href="">443-545-4669</a>
+              <Link href="">443-545-4669</Link>
             </li>
           </ul>
         </div>
       </section>
-      <section className="py-4 mx-32 flex flex-col gap-4">
-        <h2 className={`${grandHotel.className} text-4xl`}>How it Works</h2>
-        <div className="grid grid-cols-3 gap-16">
+      <section className="w-[60%] py-8 mx-auto flex flex-col justify-center items-center gap-4">
+        <h2 className={`${grandHotel.className} text-5xl`}>How it Works</h2>
+        <div className="grid grid-cols-3 gap-8">
           <InfoCard
             title="CHOOSE IT"
             text="This might be the hardest part! Our shelves are filled with fun, functional, seasonal & holiday choices!"
@@ -51,14 +51,14 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="w-full px-16 py-4 flex flex-col gap-4 bg-white">
-        <h2 className={`${grandHotel.className} text-4xl`}>Calendar Events</h2>
+      <section className="w-full px-32 py-8 flex flex-col gap-4 bg-white">
+        <h2 className={`${grandHotel.className} text-5xl`}>Calendar Events</h2>
         <EventGrid />
       </section>
-      <section className="py-4 flex flex-col gap-4 bg-white">
-        <h2 className={`${grandHotel.className} text-4xl`}>Location</h2>
-        <Image src="/map.svg" width={1280} height={342} alt="Map image" />
-        <div>
+      <section className="py-8 flex flex-col gap-4 bg-white">
+        <h2 className={`${grandHotel.className} text-5xl`}>Location</h2>
+        <Image src="/map.svg" width={1280} height={342} className="w-full mx-auto" alt="Map image" />
+        <div className="text-lg">
           <strong className="text-[#39160B]">Studio Location: </strong>
           <Link
             className="text-[#AF5C42] underline"
@@ -68,16 +68,17 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className="w-full pt-4 pb-8 px-32 flex flex-col gap-4 bg-white">
-        <h2 className={`${grandHotel.className} text-4xl`}>Parking</h2>
-        <div className="grid grid-cols-2 gap-6">
+      <section className="w-full pt-8 pb-8 px-32 flex flex-col gap-4 bg-white">
+        <h2 className={`${grandHotel.className} text-5xl`}>Parking</h2>
+        <div className="grid grid-cols-2 items-center gap-6">
           <Image
             src="/parking-map.svg"
-            width={600}
-            height={600}
+            width={600/2}
+            height={600/2}
+            className="mx-auto"
             alt="Parking map image"
           />
-          <ul className="flex flex-col justify-between text-left list-disc">
+          <ul className="flex flex-col text-base text-left list-disc">
             <li>
               From Frederick Rd, turn on Egges Lane, then take the{" "}
               <strong>2nd quick left</strong> into our parking, which is

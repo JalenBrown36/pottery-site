@@ -24,11 +24,11 @@ export default function InfoCard({title, text, image}: Props) {
             className="block mx-auto md:hidden"
             alt={`${image}.png`}
         />
-        <div className="absolute top-1/2 left-0 right-0 w-max mx-auto py-1 px-2 text-3xs text-white bg-orange-900 rounded">
+        <div className="absolute top-1/2 left-0 right-0 w-max mx-auto py-1 px-2 text-white bg-orange-900 rounded">
             <strong>{title}</strong>
         </div>
       </div>
-      <p className="h-max text-2xs">{text}</p>
+      <p>{text}</p>
     </div>
   );
 }

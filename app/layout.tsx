@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`relative pb-12 ${urbanist.className} antialiased bg-mainBg bg-fixed text-[#39160B]`}>
+      <body className={`relative pb-16 ${urbanist.className} antialiased bg-mainBg bg-fixed text-sm text-[#39160B]`}>
         <Header />
         {children}
         <Footer />

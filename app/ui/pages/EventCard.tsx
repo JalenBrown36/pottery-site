@@ -25,10 +25,10 @@ export default function EventCard({
       />
       <div>
         <div className="mb-1">
-          <h4 className="text-xs font-bold">{title}</h4>
-          <p className="text-3xs font-bold">{date}</p>
+          <h4 className="text-base font-bold">{title}</h4>
+          <p className="font-bold">{date}</p>
         </div>
-        <p className="text-3xs font-normal">{text}</p>
+        <p>{text}</p>
       </div>
     </Link>
   );
