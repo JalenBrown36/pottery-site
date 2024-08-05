@@ -1,6 +1,6 @@
 import { grandHotel } from "./ui/Fonts";
 import InfoCard from "./ui/pages/InfoCard";
-import EventForm from "./ui/pages/EventForm";
+import EventGrid from "./ui/pages/EventGrid";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
       <section className="w-full px-16 py-4 flex flex-col gap-4 bg-white">
         <h2 className={`${grandHotel.className} text-4xl`}>Calendar Events</h2>
-        <EventForm />
+        <EventGrid />
       </section>
       <section className="py-4 flex flex-col gap-4 bg-white">
         <h2 className={`${grandHotel.className} text-4xl`}>Location</h2>

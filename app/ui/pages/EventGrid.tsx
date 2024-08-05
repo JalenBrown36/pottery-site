@@ -1,6 +1,6 @@
 import EventCard from "./EventCard"
 
-export default function EventForm() {
+export default function EventGrid() {
     const testData = [
         {
             imgPath: "/interior-store.png",
