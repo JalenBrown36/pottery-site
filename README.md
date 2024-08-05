@@ -12,6 +12,4 @@ This project is inspired by local online shops 🏪 with a primary focus on arts
 
 **Disclaimer:** Works for Tablet (768px) and Laptop (1024px) currently.
 
-![pottery-site vercel app_ (1)](https://github.com/user-attachments/assets/708fe135-c241-4a67-8e99-c81f229f98cc)
-
-
+![pottery-site vercel app_ (1)](https://github.com/user-attachments/assets/1e5a5c18-9b10-4588-9403-3eeec3094e25)
