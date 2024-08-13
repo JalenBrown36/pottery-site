@@ -13,7 +13,7 @@ export default function Page() {
           VIDEOS: LEARN A NEW PAINTING TECHNIQUE in 60 SECONDS!!
         </strong>
         </section>
-        <section className="w-2/3 pt-8 mb-8 mx-auto flex flex-row justify-center items-center gap-4 border-t-1 border-[#AF5C42]">
+        <section className="w-[80%] pt-8 mb-8 mx-auto flex flex-row justify-center items-center gap-4 border-t-1 border-[#AF5C42]">
           <div className="w-[350px] flex flex-col gap-2 text-left">
             <div>
               <h4>

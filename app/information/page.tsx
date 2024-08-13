@@ -6,11 +6,11 @@ import Form from "../ui/pages/Form";
 export default function Page() {
   return (
     <div className="w-full mx-auto text-center">
-      <section className="w-full px-60 my-8 mx-auto grid grid-flow-row gap-4">
+      <section className="w-[80%] my-8 mx-auto grid grid-flow-row gap-4">
         <h2 className={`${grandHotel.className}`}>Call, Text , & Find us</h2>
-        <div className="w-full grid grid-cols-2 justify-between item-center">
-          <div className="flex flex-col gap-2 justify-between border-r-1 border-[#AF5C42]">
-            <div className="flex flex-col gap-1 text-left [&_p]:pl-4 [&_p]:w-[350px] [&_p]:font-normal">
+        <div className="w-full flex flex-row justify-center">
+          <div className="w-3/4 flex flex-col gap-2 justify-between">
+            <div className="flex flex-col gap-1 text-left [&_p]:pl-4 [&_p]:font-normal">
               <h4 className="font-bold">Studio Hours</h4>
               <p>
                 <strong>Tuesday & Wednesday: </strong>12pm – 6pm
@@ -42,6 +42,7 @@ export default function Page() {
               </strong>
             </div>
           </div>
+          <div className="w-[.5px] mx-8 bg-[#AF5C42]"></div>
           <Form />
         </div>
       </section>

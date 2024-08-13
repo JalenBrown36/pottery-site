@@ -24,11 +24,11 @@ export default function EventCard({
         alt="event image"
       />
       <div>
-        <div className="mb-1">
-          <h4 className="text-base font-bold">{title}</h4>
-          <p className="font-bold">{date}</p>
+        <div className="mb-2">
+          <h4 className="font-bold">{title}</h4>
+          <p className="text-xs lg:text-sm xl:text-base font-semibold">{date}</p>
         </div>
-        <p>{text}</p>
+        <p className="hidden lg:block">{text}</p>
       </div>
     </Link>
   );

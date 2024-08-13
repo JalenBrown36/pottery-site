@@ -15,7 +15,7 @@ export default function Form() {
     };
 
   return (
-    <div className="w-full pl-8 flex flex-col gap-1 text-left">
+    <div className="w-full flex flex-col gap-1 text-left">
       <h4 className="font-bold">Message Hotline</h4>
       <form onSubmit={onSubmit} className="flex flex-col gap-2 [&_input]:pl-2 [&_input]:py-1 [&_input]:border-[.5px] [&_input]:border-[#af5b422b] [&_input]:outline-none [&_input]:rounded">
         <input type="text" placeholder="Name" name="name" className="h-min"/>

@@ -8,15 +8,15 @@ export default function Home() {
   return (
     <div className="w-full mx-auto text-center">
       <section className="w-full bg-mainBg bg-fixed">
-        <section className="w-2/3 mx-auto grid grid-flow-row gap-8 py-4">
-          <strong className="w-full">
+        <section className="w-[80%] mx-auto py-4 flex flex-col gap-8 justify-center">
+          <strong>
             Welcome to The Pottery Cove, a cozy, creative paint-your-own pottery
             studio in the heart of Catonsville since 2012! Check our FAQs page
             for more details about our pricing, reservations, pottery pickup,
             job opportunities & scheduling a party or event
           </strong>
-          <div className="flex justify-center">
-            <ul className="w-full flex flex-row gap-16 justify-center items-center [&_li]:w-max [&_a]:underline">
+          <div>
+            <ul className="px-4 flex flex-row gap-4 justify-evenly [&_li]:w-max [&_a]:underline">
               <li>
                 <strong>Email: </strong>
                 <Link href="">ThePotteryCove@gmail.com</Link>
@@ -34,7 +34,7 @@ export default function Home() {
         </section>
         <section className="w-[60%] py-8 mx-auto flex flex-col gap-4">
           <h2 className={`${grandHotel.className}`}>How it Works</h2>
-          <div className="grid grid-cols-3 gap-16">
+          <div className="grid grid-cols-3 gap-8 lg:gap-16">
             <InfoCard
               title="CHOOSE IT"
               text="This might be the hardest part! Our shelves are filled with fun, functional, seasonal & holiday choices!"
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <section className="w-full px-32 my-8 flex flex-col gap-4">
+      <section className="w-[80%] mx-auto my-8 flex flex-col gap-4">
         <h2 className={`${grandHotel.className}`}>Calendar Events</h2>
         <EventGrid />
       </section>
