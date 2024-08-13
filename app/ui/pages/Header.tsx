@@ -3,6 +3,7 @@
 import NavBar from "./Navbar";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -17,7 +18,8 @@ export default function Header() {
   return (
     <header className={`${pathImage} w-full py-8 bg-cover bg-no-repeat`}>
       <div className="w-3/4 mx-auto flex flex-col gap-4 justify-center items-center">
-          <div className="w-2/3">
+        <div className="w-2/3">
+          <Link href="/">
             <Image
               src="/pottery-logo.png"
               width={711}
@@ -25,7 +27,8 @@ export default function Header() {
               className="mx-auto"
               alt="Pottery Logo"
             />
-          </div>
+          </Link>
+        </div>
         <NavBar />
       </div>
     </header>

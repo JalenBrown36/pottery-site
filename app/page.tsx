@@ -7,57 +7,70 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="w-full mx-auto text-center">
-      <section className="w-2/3 mx-auto grid grid-flow-row gap-8 py-4">
-        <strong className="w-full">
-          Welcome to The Pottery Cove, a cozy, creative paint-your-own pottery
-          studio in the heart of Catonsville since 2012! Check our FAQs page for
-          more details about our pricing, reservations, pottery pickup, job
-          opportunities & scheduling a party or event
-        </strong>
-        <div className="flex justify-center">
-          <ul className="w-full flex flex-row gap-16 justify-center items-center [&_li]:w-max [&_a]:underline">
-            <li>
-              <strong>Email: </strong>
-              <Link href="">ThePotteryCove@gmail.com</Link>
-            </li>
-            <li>
-              <strong>Studio: </strong>
-              <Link href="">443-830-2683</Link>
-            </li>
-            <li>
-              <strong>Mobile: </strong>
-              <Link href="">443-545-4669</Link>
-            </li>
-          </ul>
-        </div>
+      <section className="w-full bg-mainBg bg-fixed">
+        <section className="w-2/3 mx-auto grid grid-flow-row gap-8 py-4">
+          <strong className="w-full">
+            Welcome to The Pottery Cove, a cozy, creative paint-your-own pottery
+            studio in the heart of Catonsville since 2012! Check our FAQs page
+            for more details about our pricing, reservations, pottery pickup,
+            job opportunities & scheduling a party or event
+          </strong>
+          <div className="flex justify-center">
+            <ul className="w-full flex flex-row gap-16 justify-center items-center [&_li]:w-max [&_a]:underline">
+              <li>
+                <strong>Email: </strong>
+                <Link href="">ThePotteryCove@gmail.com</Link>
+              </li>
+              <li>
+                <strong>Studio: </strong>
+                <Link href="">443-830-2683</Link>
+              </li>
+              <li>
+                <strong>Mobile: </strong>
+                <Link href="">443-545-4669</Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section className="w-[60%] py-8 mx-auto flex flex-col gap-4">
+          <h2 className={`${grandHotel.className}`}>How it Works</h2>
+          <div className="grid grid-cols-3 gap-16">
+            <InfoCard
+              title="CHOOSE IT"
+              text="This might be the hardest part! Our shelves are filled with fun, functional, seasonal & holiday choices!"
+              image="/coffee-1.png"
+            />
+            <InfoCard
+              title="PAINT IT"
+              text="The high heat from the kiln (over 1800 degrees!) transforms the ceramic glaze to a shiny & bold masterpiece!"
+              image="/coffee-2.png"
+            />
+            <InfoCard
+              title="PICK IT UP"
+              text="The high heat from the kiln (over 1800 degrees!) transforms the ceramic glaze to a shiny & bold masterpiece!"
+              image="/coffee-3.png"
+            />
+          </div>
+        </section>
       </section>
-      <section className="w-[60%] py-8 mx-auto flex flex-col justify-center items-center gap-4">
-        <h2 className={`${grandHotel.className} text-5xl`}>How it Works</h2>
-        <div className="grid grid-cols-3 gap-8">
-          <InfoCard
-            title="CHOOSE IT"
-            text="This might be the hardest part! Our shelves are filled with fun, functional, seasonal & holiday choices!"
-            image="/coffee-1.png"
-          />
-          <InfoCard
-            title="PAINT IT"
-            text="The high heat from the kiln (over 1800 degrees!) transforms the ceramic glaze to a shiny & bold masterpiece!"
-            image="/coffee-2.png"
-          />
-          <InfoCard
-            title="PICK IT UP"
-            text="The high heat from the kiln (over 1800 degrees!) transforms the ceramic glaze to a shiny & bold masterpiece!"
-            image="/coffee-3.png"
-          />
-        </div>
-      </section>
-      <section className="w-full px-32 py-8 flex flex-col gap-4 bg-white">
-        <h2 className={`${grandHotel.className} text-5xl`}>Calendar Events</h2>
+      <section className="w-full px-32 my-8 flex flex-col gap-4">
+        <h2 className={`${grandHotel.className}`}>Calendar Events</h2>
         <EventGrid />
       </section>
-      <section className="py-8 flex flex-col gap-4 bg-white">
-        <h2 className={`${grandHotel.className} text-5xl`}>Location</h2>
-        <Image src="/map.svg" width={1280} height={342} className="w-full mx-auto" alt="Map image" />
+      <section className="my-8 flex flex-col gap-4">
+        <h2 className={`${grandHotel.className}`}>Location</h2>
+        <Link
+          className="text-[#AF5C42] underline"
+          href="https://www.google.com/maps/dir//the+pottery+cove+google+maps/@39.2603199,-76.7398348,13.06z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c81e82b69618ab:0x4ccdd008bcd57921!2m2!1d-76.7344635!2d39.2716385?entry=ttu"
+        >
+          <Image
+            src="/Pottery-Cove-Google-Map.png"
+            width={1280}
+            height={342}
+            className="w-full mx-auto"
+            alt="Map image"
+          />
+        </Link>
         <div className="text-lg">
           <strong className="text-[#39160B]">Studio Location: </strong>
           <Link
@@ -68,14 +81,14 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className="w-full pt-8 pb-8 px-32 flex flex-col gap-4 bg-white">
-        <h2 className={`${grandHotel.className} text-5xl`}>Parking</h2>
+      <section className="w-full px-32 my-8 flex flex-col gap-4">
+        <h2 className={`${grandHotel.className}`}>Parking</h2>
         <div className="grid grid-cols-2 items-center gap-6">
           <Image
-            src="/parking-map.svg"
-            width={600/2}
-            height={600/2}
-            className="mx-auto"
+            src="/Pottery-Cove-Map.png"
+            width={600 / 2}
+            height={600 / 2}
+            className="mx-auto rounded-md"
             alt="Parking map image"
           />
           <ul className="flex flex-col text-base text-left list-disc">

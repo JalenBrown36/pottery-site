@@ -12,7 +12,7 @@ interface NavLinkProps {
 
 export default function NavLink({ url, text, icon}: NavLinkProps) {
   return (
-    <li className="w-full h-8 flex justify-center text-white items-center border-1 border-white">
+    <li className="w-full h-8 flex justify-center text-white items-center border-1 border-white rounded">
       <Link href={url} className={clsx(
         "w-full h-full flex justify-center items-center text-center font-bold text-xs",
         {"bg-white text-[#39160B]": usePathname() === url}

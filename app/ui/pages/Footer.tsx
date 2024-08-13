@@ -8,7 +8,7 @@ export default function Footer() {
                 <NavLink url="/gallery" text="TIPS & TECHNIQUES"/>
                 <NavLink url="/parties" text="PARTIES" />
                 <NavLink url="/information" text="FAQs" />
-                <NavLink url="/" text="GIFT CERTIFICATES" />
+                <NavLink url="https://squareup.com/gift/E470QFJA5QJTE/order" text="GIFT CERTIFICATES" />
             </ul>
             <ul className="flex gap-4 justify-end [&_li]:border-0">
                 <NavLink url="https://www.instagram.com/thepotterycove/" text="Instagram" icon="/instagram.png"></NavLink>

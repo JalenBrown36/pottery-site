@@ -8,7 +8,7 @@ export default function NavBar() {
     {url: "/gallery", text: "TIPS & TECHNIQUES"},
     {url: "/parties", text: "PARTIES"},
     {url: "/information", text: "FAQs"},
-    {url: "/", text: "GIFT CERTIFICATES"}
+    {url: "https://squareup.com/gift/E470QFJA5QJTE/order", text: "GIFT CERTIFICATES"}
   ]
 
   return (
