@@ -56,9 +56,6 @@ export default function Page() {
             />
         </div>
       </section>
-      <section>
-        [Insert grid here]
-      </section>
     </div>
   );
 }
