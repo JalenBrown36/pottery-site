@@ -3,6 +3,7 @@ import InfoCard from "./ui/pages/InfoCard";
 import EventGrid from "./ui/pages/EventGrid";
 import Image from "next/image";
 import Link from "next/link";
+import { promises as fs } from "fs";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        <section className="w-[60%] py-8 mx-auto flex flex-col gap-4">
+        <section className="w-[70%] py-8 mx-auto flex flex-col gap-4">
           <h2 className={`${grandHotel.className}`}>How it Works</h2>
           <div className="grid grid-cols-3 gap-8 lg:gap-16">
             <InfoCard
@@ -83,12 +84,12 @@ export default function Home() {
       </section>
       <section className="w-full px-32 my-8 flex flex-col gap-4">
         <h2 className={`${grandHotel.className}`}>Parking</h2>
-        <div className="grid grid-cols-2 items-center gap-6">
+        <div className="grid grid-cols-2 gap-8 place-items-start">
           <Image
             src="/Pottery-Cove-Map.png"
             width={600 / 2}
             height={600 / 2}
-            className="mx-auto rounded-md"
+            className="w-full border-[2px] rounded-md"
             alt="Parking map image"
           />
           <ul className="flex flex-col text-base text-left list-disc">

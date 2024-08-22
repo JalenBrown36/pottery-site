@@ -13,7 +13,7 @@ export default function Page() {
           for all ages & any occasion!
         </strong>
       </section>
-      <section className="w-[80%] mx-auto py-4 flex flex-row gap-8 border-t-1 border-[#AF5C42]">
+      <section className="w-[80%] h-full mx-auto py-4 flex flex-row gap-8 border-t-1 border-[#AF5C42]">
         <div className="flex flex-col gap-2 text-left">
           <div className="flex flex-col gap-1">
             <Link href="https://thepotterycove.com/parties/kids-parties/">

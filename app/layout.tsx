@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`relative pb-16 ${urbanist.className} antialiased text-sm lg:text-base [&_h2]:text-4xl [&_h2]:lg:text-5xl [&_h4]:text-base [&_h4]:lg:text-lg [&_h4]:xl:text-xl [&_h4]:font-bold bg-white text-[#39160B]`}>
+      <body className={`relative min-h-screen pb-16 ${urbanist.className} antialiased text-sm lg:text-base [&_h2]:text-4xl [&_h2]:lg:text-5xl [&_h3]:text-base [&_h3]:lg:text-xl [&_h3]:2xl:text-2xl [&_h3]:font-semibold [&_h4]:text-base [&_h4]:lg:text-lg [&_h4]:xl:text-xl [&_h4]:font-bold bg-white text-[#39160B]`}>
         <Header />
         {children}
         <Footer />

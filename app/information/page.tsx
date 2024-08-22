@@ -77,7 +77,7 @@ export default function Page() {
             src="/Pottery-Cove-Map.png"
             width={600}
             height={600}
-            className="mx-auto border-[2px] rounded-md"
+            className="border-[2px] rounded-md"
             alt="Parking map image"
           />
           <ul className="h-full flex flex-col justify-evenly text-base text-left list-disc">
