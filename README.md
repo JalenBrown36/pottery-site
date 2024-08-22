@@ -6,7 +6,7 @@ Designed by **Kayla Moore**
 Developed by **Jalen Brown**
 
 ## Goals
-This project is inspired by local online shops 🏪 with a primary focus on arts and crafts, aka ✨Pottery✨. In an effort to learn and build a web application 🌐, I collaborated with an artist named Kayla. We are currently working together to create an improved version of the "The Pottery Cove" website. Don't worry we will not profiting from this 👌, but only showcasing our work on this platform 😁.
+This project is inspired by local online shops 🏪 with a primary focus on arts and crafts, aka ✨Pottery✨. In an effort to learn and build a web application 🌐, I collaborated with an artist named Kayla. We are currently working together to create an improved version of the "The Pottery Cove" website. In addition, we've included social media links, google location, and a Youtube Data API to showcase "The Pottery Cove" works. Don't worry we will not profiting from this 👌, but only showcasing our work on this platform 😁.
 
 ## Demo Project 
 
