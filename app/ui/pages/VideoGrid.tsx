@@ -7,8 +7,8 @@ import { data } from "../../data";
 
 export default function VideoGrid() {
   const url = ""; // This is the URL for the YouTube API (https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UC4bU4PzXr_dSoWFjTa9bvRA&maxResults=12&order=date&type=video&key=[YOUR_API_KEY])
-  const youtubeData = data.items; // This is sample data from the YouTube API
-  const [videos, setVideos] = useState(); // This is the state for the videos
+  const youtubeData = data.items; // Sample data from the YouTube API
+  const [videos, setVideos] = useState([]); // This is the state for the videos
 
   useEffect(() => {
     // Check if there is a URL
@@ -27,20 +27,18 @@ export default function VideoGrid() {
         console.error(error);
       });
     }
-    // If no URL, set the state to the data from the YouTube API
-    else {
-      // If no URL, set the state to the data from the YouTube API
-      setVideos(youtubeData);
-      console.log("No URL provided, using sample data");
-    }
   }, []);
-  
+  console.log(videos);
   return (
     <div className="grid grid-cols-3 gap-4">
       {/* Conditional Rendering if API call or not */}
-      {videos?.map((video: any, index: number) => (
+      {videos.length != 0 ? videos?.map((video: any, index: number) => (
         <VideoCard key={index} id={video.id.videoId} snippet={video.snippet} url={`https://www.youtube.com/watch?v=${video.id.videoId}`} />
-      ))}
+      )) 
+    :
+    youtubeData.map((video: any, index: number) => (
+      <VideoCard key={index} id={video.id.videoId} snippet={video.snippet} url={`https://www.youtube.com/watch?v=${video.id.videoId}`} />
+    ))}
     </div>
   );
 }
