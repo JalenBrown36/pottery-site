@@ -92,7 +92,7 @@ export default function Home() {
             className="w-full border-[2px] rounded-md"
             alt="Parking map image"
           />
-          <ul className="flex flex-col justify-evenly text-base text-left list-disc">
+          <ul className="h-full flex flex-col justify-evenly text-base text-left list-disc">
             <li>
               From Frederick Rd, turn on Egges Lane, then take the{" "}
               <strong>2nd quick left</strong> into our parking, which is
